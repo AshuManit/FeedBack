@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title></title> 
+  <link rel="stylesheet"  href="feedback.css"> 
+ </head>
+  <body>
+	<header>
+	   <h2 style="width:60%;  padding-left:5px;">FEEDBACK</h3>
+	   <h2 style="width:40%; text-align:right; padding-right:10px;">Your Feedback Matter </h3>
+	</header>
+	
+	<nav>
+	<div id="nav">
+	  
+     	  <div  style=" width:40%; padding-left:-12px; " >
+	        <ul>	
+	          <li><a href="index.html">Home</a></li>
+		      <li><a href="aboutme.html">About Me</a></li>
+		      <li><a href="#">Contact Me</a></li>
+	         </ul>
+	      </div>
+	      <div style=" width:60%; text-align:right; padding-top:15px; padding-right:45px;">
+		     <form>
+		        <input type="text" placeholder="Search..." name="search">
+     	        <button>Search</button>
+		     </form>
+		  </div>
+	    </div>	
+	</nav>
+	
+	<main>
+	   <section id="section1">
+		  <form>
+		    <fieldset >
+			 <legend style="font-size:30px; background-color:#456; text-align:center; box-shadow:15px 10px 34px #456; border-radius:15px;color:black; padding:0px 10px;"> FeedBack Form</legend>
+               <div style="display:flex;">
+		         <label for="Fname" style="width:40%;">First name :</label>
+			     <input type="text"  name="Fname" style="width:60%;" placeholder="Enter First Name...." required autocomplete="off">
+               </div>            
+			    <br><br>
+			    <div style="display:flex;">
+			      <label for="Mname" style="width:40%;">Middle Name :</label>
+			      <input  type="text"  id="Mname" value="" style="width:60%;" placeholder="Enter Middle Name...." required autocomplete="off">
+                </div>
+			    <br><br>
+		      	<div style="display:flex;">
+		         	<label for="Lname" style="width:40%;"> Last Name :</label>
+			        <input  type="text"  name="Lname" style="width:60%;" placeholder="Enter Last Name...." required autocomplete="off">
+                </div>
+			    <br><br>
+			    <div style="display:flex;">
+			        <label style="width:40%;" >Suggestion :</label>
+                    <textarea name="subject" placeholder=" Write your suggestion...." style="height:80px;width:60%;" required autocomplete="off"></textarea>			 
+                </div><br><br>
+			    <div style="display:flex;">
+			       <div style="width:40%;">
+			          <label name="Gender"  >Gender :</label>
+			        </div>
+					<div style="width:60%; color:white; ">			 
+					    <input type="radio" name="gender"  value="Male"  required >
+			            <label  style="padding-left:5px;">Male</label>
+                        <input   type="radio" name="gender"  value="FeMale" required >
+			            <label style="padding-left:5px;">FeMale</label>
+			        </div>
+			     </div>
+			</div>
+			</div>
+			<br> <br>						
+			<hr style="background-color:gray; height:2px;">
+		    	<div style="text-align:center; padding:5px; margin:5px;  ">
+			  <button style=" padding:5px 20px; background-color:green; color:white; font-size:30px;">+</button>
+			  <button style=" padding:5px 20px; margin-left:50px; background-color:red; color:white; font-size:30px;">-</button>
+			 </div>
+			 </fieldset>
+		</form>
+		
+	   </section>
+	   
+	   <section id="section2">
+	       <form>
+		  <fieldset>
+            
+
+			</fieldset>
+		</form>   
+	   </section>
+	   
+	</main>
+	
+	<footer>
+	  <h2 style="padding-top:10px;">Designed by Ashu@123</h2>
+	</footer>
+  <script>
+	  var name=document.getElementById("Mname").value;
+	  console.log(name, typeof(name));  </script>
+	  if(name.length()>4)
+	  {
+		  alert("jyda ho gyaa");
+	  }
+  </body>
+</html>
